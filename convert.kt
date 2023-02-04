@@ -7,8 +7,8 @@ fun main()
     val conversionMethod = readLine()!!.toInt() //Got the input from the user
 	
 	println()
-	
-	when(conversionMethod){
+	//use switch case to convert different measurements
+	when(conversionMethod){			
 		(1) -> {
 			println("enter the kilometeres to convert in miles:")
 			val KmToMi  = readLine()!!.toDouble()
@@ -46,7 +46,7 @@ fun main()
 			println("$cupsToL cups = $result Liters")
 		}
 		else -> {
-			print("Something is wrong")//
+			print("Error!please select the write opition")//if user select the wrong input 
 		}
 	}
 }
